@@ -166,12 +166,31 @@ This is the image of results in the lab.
 <p>Measured lowest (lower) frequency of used spectrum: 2.467 GHz
 <p>Measured highest (upper) frequency of used spectrum: 2.487 GHz
 <p>Measured width of used spectrum: 0.02 GHz
-<p>Signal power [dBm] (average of signal): 33.7 dB
-<p>Noise power [dBm] (average of noise level): 60.7 dB
+<p>Signal power [dBm] (average of signal): -33.7 dB
+<p>Noise power [dBm] (average of noise level): -65 dB
 <p>
 <u>Solution:</u>
 <p>
-TYPE HERE CALCULATIONS AND SOLUTION!
+C = B⋅log2(1+S/N)
+<p>
+<p>
+R = W*log2(1 + S/N)
+<p>
+<p>
+B = 20MHz
+<p>
+<p>
+S = -33.7 dB; P[mW] = 10^-33.7/10 = 0.0004266 mW
+<p>
+<p>
+N = -65 dB; P[mW] = 10^-65/10 = 0.0000003162 mW
+<p>
+<p>
+S/N[kordades] = S[mW]/N[mW] = 0.0004266 / 0.0000003162  = 1349.146
+<p>
+<p>
+R = 20 * log2(1+1349.146) =  208 Mbit/s
+<p>
 
 <h3>4.2 Problem 2 - signal propagation</h3>
 <p>
